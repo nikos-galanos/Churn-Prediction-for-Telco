@@ -4,6 +4,7 @@ This project demonstrates a complete machine learning workflow for predicting cu
 
 ## Project Structure
 
+```
 churn_prediction/
 ├── data/
 │   ├── raw/          # Original, immutable data
@@ -19,7 +20,7 @@ churn_prediction/
 ├── models/           # Saved model files
 ├── logs/             # Prediction logs for monitoring
 ├── README.md         # Project documentation
-
+```
 
 ### Project Steps
 1. Data Acquisition and Exploration
@@ -83,18 +84,19 @@ churn_prediction/
 
 ## How to Use This Project
 
-###Setup
+### Setup
 
 1. Clone the repository
 2. Create a virtual environment:
 
+```
     python -m venv churn_env
     source churn_env/bin/activate
-
+```
 Install dependencies:
-
+```
     pip install -r requirements.txt (requirements.txt file is not available in this repository)
-
+```
 ## Running the Notebooks
 
 Execute the notebooks in sequence to reproduce the analysis:
@@ -107,21 +109,21 @@ Execute the notebooks in sequence to reproduce the analysis:
 
 1. Train and save the model using the notebooks
 2. Start the Flask API:
-
+```
     python src/04_model_deployment.py
-
+```
 ## Using API Client
 
 Use the client example to test the API:
-
+```
     python src/client_example.py
-
+```
 Othewise make HTTP requests directly:
-
+```
     curl -X POST http://localhost:5000/predict \
     -H 'Content-Type: application/json' \
     -d '{"customerID":"Sample-1234", ...}
-
+```
 ## Business Value
 
 This churn prediction system provides:
