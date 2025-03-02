@@ -1,4 +1,4 @@
-# Customer Churn Prediction End-to-End ML Project
+# Customer Churn Prediction for Telco - End to End workflow
 
 This project demonstrates a complete machine learning workflow for predicting customer churn of a telecommunications company, from data acquisition to model deployment and monitoring.
 
